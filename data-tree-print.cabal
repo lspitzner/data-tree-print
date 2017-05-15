@@ -8,7 +8,7 @@ maintainer:          lsp@informatik.uni-kiel.de
 copyright:           Copyright (C) 2016 Lennart Spitzner
 Homepage:            https://github.com/lspitzner/data-tree-print
 Bug-reports:         https://github.com/lspitzner/data-tree-print/issues
-category:            Debug Pretty Data
+category:            Pretty Printer
 build-type:          Simple
 extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
@@ -24,11 +24,8 @@ description: {
   * Output, if large, is often easier to parse than `show` output
     due to the formatting as a nested tree.
   .
-  The user can provide custom transformations to `Doc` for specific types.
-  .
-  In contrast to the package `data-pprint` this implementation is pure,
-  always returns the full result (infinite input is probably a bad idea) and
-  does not limit the total size of the output.
+  * The user can adapt the behaviour at runtime using custom layouting
+    expressed via syb-style extension.
 }
 
 source-repository head {
