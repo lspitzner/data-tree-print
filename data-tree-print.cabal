@@ -4,7 +4,7 @@ synopsis:            Print Data instances as a nested tree
 license:             BSD3
 license-file:        LICENSE
 author:              Lennart Spitzner
-maintainer:          lsp@informatik.uni-kiel.de
+maintainer:          Lennart Spitzner <hexagoxel@hexagoxel.de>
 copyright:           Copyright (C) 2016 Lennart Spitzner
 Homepage:            https://github.com/lspitzner/data-tree-print
 Bug-reports:         https://github.com/lspitzner/data-tree-print/issues
