@@ -19,7 +19,7 @@ where
 
 
 import           Data.Data
-import           Text.PrettyPrint
+import           Text.PrettyPrint as PP
 
 import           Data.Generics.Aliases
 import           Data.Function (fix)
@@ -146,8 +146,8 @@ defaultLayouterF (DataToLayouter lf) = DataToLayouter
              + sum (_lay_llength <$> subs)
         func (Right i)
           | llen<=i = text "["
-                   <> hcat (punctuate (text ",") [_lay_func s (Left False) | s <- subs])
-                   <> text "]"
+                   PP.<> hcat (punctuate (text ",") [_lay_func s (Left False) | s <- subs])
+                   PP.<> text "]"
           | otherwise = text "[" $$ nest 2 (_lay_func s1 (Right $ i-2))
                      $$ vcat [text "," $$ nest 2 (_lay_func s (Right $ i-2)) | s <- sr]
                      $$ text "]"
