@@ -6,23 +6,15 @@ checks:
   compiler-versions:
     compilers:
       - compiler: "ghc"
-        version: "7.0.4"
-      - compiler: "ghc"
-        version: "7.2.2"
-      - compiler: "ghc"
-        version: "7.4.2"
-      - compiler: "ghc"
-        version: "7.6.3"
-      - compiler: "ghc"
-        version: "7.8.4"
-      - compiler: "ghc"
         version: "7.10.3"
       - compiler: "ghc"
         version: "8.0.2"
       - compiler: "ghc"
         version: "8.2.2"
       - compiler: "ghc"
-        version: "8.4.1"
+        version: "8.4.3"
+      - compiler: "ghc"
+        version: "8.6.1"
     compilers-help: |
       for this to work, cabal will need the paths to the actual
       compilers to be configured; see the note about the user-global

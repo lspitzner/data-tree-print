@@ -36,7 +36,7 @@ source-repository head {
 library
   exposed-modules:     DataTreePrint
   build-depends:
-    { base >=4.3 && <4.12
+    { base >=4.8 && <4.13
     , pretty >=1.1 && <1.2
     , syb >=0.6 && <0.8
     }
