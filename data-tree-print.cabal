@@ -47,3 +47,8 @@ library
     -fno-warn-orphans
     -fno-warn-unused-imports
   }
+  if impl(ghc >= 8.0) {
+    ghc-options: {
+      -Wcompat
+    }
+  }
