@@ -91,8 +91,8 @@ newtype DataToLayouter = DataToLayouter
 type LayouterF = DataToLayouter -> DataToLayouter
 
 defaultToDocF :: ToDocF
-defaultToDocF (DataToDoc lf) = DataToDoc $ genLayouter `extQ` string
-                                                       `ext1Q` listLayouter
+defaultToDocF (DataToDoc lf) = DataToDoc $ genLayouter `ext1Q` listLayouter
+                                                       `extQ` string
   where
     genLayouter n =
       let cStr = showConstr $ toConstr n
