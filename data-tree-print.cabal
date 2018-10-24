@@ -1,5 +1,5 @@
 name:                data-tree-print
-version:             0.1.0.1
+version:             0.1.0.2
 synopsis:            Print Data instances as a nested tree
 license:             BSD3
 license-file:        LICENSE
