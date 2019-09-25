@@ -4,6 +4,7 @@
 
 * Support ghc-8.6, but drop support for ghc<7.10
 * Fix default formatter for strings
+* Via x-revision 1 on September 2019: Support ghc-8.8
 
 ## 0.1.0.1  -- April 2018
 
